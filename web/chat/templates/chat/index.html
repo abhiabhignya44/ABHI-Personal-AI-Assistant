@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ABHI - Personal AI Assistant</title>
+
+    {% load static %}
+<link rel="stylesheet" href="{% static 'chat/style.css' %}">
+</head>
+
+<body>
+
+    <form id="csrf-form" hidden>
+        {% csrf_token %}
+    </form>
+
+    <div class="chat-container">
+
+        <!-- Header -->
+        <header class="chat-header">
+            <h1>🤖 ABHI</h1>
+            <p>Personal AI Assistant</p>
+        </header>
+
+        <!-- Chat Area -->
+        <main class="chat-area" id="chat-area">
+        </main>
+
+            <!-- <div class="message assistant-message">
+                <strong>ABHI:</strong>
+                <p>Hello! How can I help you?</p>
+            </div>
+
+            <div class="message user-message">
+                <strong>You:</strong>
+                <p>What is Python?</p>
+            </div>
+
+            <div class="message assistant-message">
+                <strong>ABHI:</strong>
+                <p>Python is a popular programming language.</p>
+            </div> -->
+
+        <!-- Message Input -->
+        <footer class="chat-input">
+
+            <input
+                type="text"
+                id="message-input"   
+                placeholder="Type your message..."
+            >
+
+            <button id="voice-button"type="button">🎤</button>   
+
+            <button id="send-button"type=button>➤</button>
+
+        </footer>
+
+    </div>
+    <script src="{% static 'chat/script.js' %}"></script>
+
+</body>
+
+</html>
