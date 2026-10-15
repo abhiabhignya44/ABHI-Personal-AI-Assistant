@@ -78,7 +78,7 @@ Security Notes
 
 Author
 
-Mallekeri Abhignya
+Mallekedi Abhignya
 B.Tech — Electronics and Communication Engineering
 
 Project Status
